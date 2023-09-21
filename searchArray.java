@@ -4,15 +4,24 @@ public class searchArray {
 
     public static void main(String[] args) {
         int [] arrayS = new int[] {1,2,3,4,7,9};
-        int nofind = 7;
+        int nofind = 4;
 
-        for (int i=0; 1<arrayS.length; i++)
+        int count =0;
+        int i ;
+
+        for (i=0; 1<arrayS.length; i++) 
             if(nofind==arrayS[i]){
-                System.out.println("number forund at " +i );
-            }else{
-                System.out.println("number not found");
+             count = count + 1;
+             break;
             }
+
         
+      if (count >= 1){
+        System.out.println("number found at place " +i);
+      }else{
+        System.out.println("number not found");
+      
+
     }
-    
+} 
 }
