@@ -15,6 +15,9 @@ public class ReverseNumber {
         ld = n%10;
         n = n /10;
         reno = reno * 10 + ld;
+        if(ld == 0){
+            break;
+        }
         }
 
         System.out.println(+reno);
